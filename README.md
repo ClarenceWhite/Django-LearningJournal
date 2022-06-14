@@ -66,10 +66,10 @@ Go to the application folder, add a new file called 'urls.py', write these codes
     ```
 ## Config 'urls.py' file under project folder
 Go to 'urls.py' file under project folder
-
-from django.urls import path, <span style='color:red;'>include</span>  
-
+```
+from django.urls import path, include  
 urlpatterns = [  
     path('admin/', admin.site.urls),  
-    <span style='color:red;'>path('{app name}/', include('{app name}.urls'))</span>  
+    path('{app name}/', include('{app name}.urls'))
 ]
+```
