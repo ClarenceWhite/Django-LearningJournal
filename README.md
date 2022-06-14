@@ -47,23 +47,22 @@ Django is a free and open source web framework with python
 - action from the web server
 ## How to edit views?
 Go to {app name} -> views.py  
-```from django.http import HttpResponse```
 ```
+from django.http import HttpResponse
+
 def hello(request):
     return HttpResponse('Hello World')
 ```
 # Map the view into url
 ## Create a urls.py in the app folder
 Go to the application folder, add a new file called 'urls.py', write these codes:  
-    ```
-    from django.urls import URLPattern, path
-    ```  
-    ```from . import views```  
-    ```
-    urlpatterns = [
-        path('hello/', views.hello)
-    ]
-    ```
+```
+from django.urls import URLPattern, path
+from . import views 
+urlpatterns = [
+    path('hello/', views.hello)
+]
+```
 ## Config 'urls.py' file under project folder
 Go to 'urls.py' file under project folder
 ```
