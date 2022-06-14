@@ -1,6 +1,6 @@
 # About
-This is my Django learning journal for my summer project Dublin Bus, also for future using, we use django as the web framework.
-I followed this Youtube vrash course: https://www.youtube.com/watch?v=rHux0gMZ3Eg
+This is my Django learning journal for my summer project Dublin Bus, also for future usage, we use django as the web framework.
+I followed this Youtube crash course: https://www.youtube.com/watch?v=rHux0gMZ3Eg
 # What is Django?
 Django is a free and open source web framework with python
 # Django features
