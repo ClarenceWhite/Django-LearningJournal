@@ -77,5 +77,7 @@ urlpatterns = [
 ## Directory for templates
 - create  a new directory named 'templates', and create a simple html file in it
 - go to views.py, change return content to this:  
-```return render(request, 'hello.html')```. 
-```return render(request, 'hello.html', {'name': 'Clarence'})```
+```
+return render(request, 'hello.html')
+return render(request, 'hello.html', {'name': 'Clarence'})
+```
