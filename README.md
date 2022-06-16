@@ -81,3 +81,20 @@ urlpatterns = [
 return render(request, 'hello.html')
 return render(request, 'hello.html', {'name': 'Clarence'})
 ```
+
+# Models in Django
+There is a 'models.py' file under the app we created, this is where we interact with databases
+## Create a model
+```
+from django.db import models
+
+class People(models.Model):
+    name = models.CharField(max_length=100)
+    sex = models.IntegerField()
+```
+## Convert this model into MySQL table
+```
+python manage.py makemigrations {app name}
+pyhton manage.py migrate
+```
+
